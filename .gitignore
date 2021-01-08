@@ -1,2 +1,3 @@
 venv/
 .faskenv
+__pycache__/
