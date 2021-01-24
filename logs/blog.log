@@ -44,3 +44,64 @@ Traceback (most recent call last):
   File "/home/jessah/blog/app/templates/404.html", line 1, in template
     {% extend "base.html" %}
 jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'extend'.
+2021-01-24 14:39:13,580 INFO: blog startup [in /home/jessah/blog/app/__init__.py:41]
+2021-01-24 14:39:26,407 ERROR: Exception on /user/CJ [GET] [in /home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/jessah/blog/app/routes.py", line 71, in user
+    posts = user.posts.order_by(Post.timestamp,desc()).paginate(
+NameError: name 'desc' is not defined
+2021-01-24 14:39:59,240 INFO: blog startup [in /home/jessah/blog/app/__init__.py:41]
+2021-01-24 14:40:00,540 ERROR: Exception on /user/CJ [GET] [in /home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/jessah/blog/app/routes.py", line 71, in user
+    posts = user.posts.order_by(Post.timestamp,desc()).paginate(
+NameError: name 'desc' is not defined
+2021-01-24 14:41:10,293 INFO: blog startup [in /home/jessah/blog/app/__init__.py:41]
+2021-01-24 14:41:13,691 ERROR: Exception on /user/CJ [GET] [in /home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/jessah/blog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/jessah/blog/app/routes.py", line 72, in user
+    page, app.config['POSTS_PER_PAGE'], False)
+NameError: name 'page' is not defined
+2021-01-24 14:43:05,335 INFO: blog startup [in /home/jessah/blog/app/__init__.py:41]
